@@ -31,4 +31,9 @@ public class AssertActions {
 				"value of status code is" +response.getStatusCode());
 	}
 
+	public void verifyStatusCode(Response response){
+		assertEquals(String.valueOf(response.getStatusCode()).startsWith("20"),true,
+				"value of status code is" +response.getStatusCode());
+	}
+
 }
